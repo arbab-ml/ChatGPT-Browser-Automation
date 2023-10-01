@@ -49,7 +49,7 @@ class ChatGPTAutomation:
             provided url """
 
         def open_chrome():
-            chrome_cmd = f"{self.chrome_path} --remote-debugging-port={port} --user-data-dir=remote-profile {url}"
+            chrome_cmd = f"'{self.chrome_path}' --remote-debugging-port={port} --user-data-dir=/Users/muhammadarbabarshad/temporarychromeuser {url}"
             os.system(chrome_cmd)
 
         chrome_thread = threading.Thread(target=open_chrome)
@@ -63,7 +63,7 @@ class ChatGPTAutomation:
 
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_experimental_option("debuggerAddress", f"127.0.0.1:{port}")
-        driver = webdriver.Chrome(executable_path=self.chrome_driver_path, options=chrome_options)
+        driver = webdriver.Chrome( options=chrome_options)
         return driver
 
 
