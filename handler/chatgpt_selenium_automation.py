@@ -7,7 +7,7 @@ import socket
 import threading
 import os
 from selenium.webdriver.chrome.service import Service
-
+import json
 
 
 class ChatGPTAutomation:
@@ -79,7 +79,11 @@ class ChatGPTAutomation:
         """ Sends a message to ChatGPT and waits for 20 seconds for the response """
 
         input_box = self.driver.find_element(by=By.XPATH, value='//textarea[contains(@placeholder, "Send a message")]')
-        self.driver.execute_script(f"arguments[0].value = '{prompt}';", input_box)
+        
+        # Use json.dumps to properly escape the string for JavaScript
+        escaped_prompt = json.dumps(prompt)
+        
+        self.driver.execute_script(f"arguments[0].value = {escaped_prompt};", input_box)
         input_box.send_keys(Keys.RETURN)
         input_box.submit()
         time.sleep(20)
