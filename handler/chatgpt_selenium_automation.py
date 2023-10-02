@@ -6,6 +6,7 @@ import time
 import socket
 import threading
 import os
+from selenium.webdriver.chrome.service import Service
 
 
 
@@ -27,6 +28,7 @@ class ChatGPTAutomation:
 
         url = r"https://chat.openai.com"
         free_port = self.find_available_port()
+        print("the found free port is", free_port)
         self.launch_chrome_with_remote_debugging(free_port, url)
         self.wait_for_human_verification()
         self.driver = self.setup_webdriver(free_port)
@@ -44,6 +46,7 @@ class ChatGPTAutomation:
 
 
 
+
     def launch_chrome_with_remote_debugging(self, port, url):
         """ Launches a new Chrome instance with remote debugging enabled on the specified port and navigates to the
             provided url """
@@ -58,12 +61,16 @@ class ChatGPTAutomation:
 
 
     def setup_webdriver(self, port):
-        """  Initializes a Selenium WebDriver instance, connected to an existing Chrome browser
+        """ Initializes a Selenium WebDriver instance, connected to an existing Chrome browser
              with remote debugging enabled on the specified port"""
-
+        print("Got the port: ", port)
+        
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_experimental_option("debuggerAddress", f"127.0.0.1:{port}")
-        driver = webdriver.Chrome( options=chrome_options)
+
+        # Using the new way of specifying executable_path
+        service = Service(executable_path=self.chrome_driver_path)
+        driver = webdriver.Chrome(service=service, options=chrome_options)
         return driver
 
 
