@@ -52,7 +52,7 @@ class ChatGPTAutomation:
             provided url """
 
         def open_chrome():
-            chrome_cmd = f"'{self.chrome_path}' --remote-debugging-port={port} --user-data-dir=/Users/muhammadarbabarshad/temporarychromeuser {url}"
+            chrome_cmd = f"'{self.chrome_path}' --remote-debugging-port={port} --user-data-dir=/Users/muhammadarbabarshad/temporarychromeuser-arbab-isu {url}"
             os.system(chrome_cmd)
 
         chrome_thread = threading.Thread(target=open_chrome)
