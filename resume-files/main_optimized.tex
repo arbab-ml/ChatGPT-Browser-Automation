@@ -4,7 +4,15 @@
 % Based off of: https://github.com/sb2nov/resume
 % License : MIT
 %------------------------
-
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
 \documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
@@ -140,44 +148,30 @@
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Software Engineering Intern}{05/2022 -- 08/2022}
-      {Kingland}{Iowa, USA}
-      \resumeItemListStart
-        esumeItem{Revised Bullet Points:}
-esumeItem{Implemented auto-scaling on AWS Fargate; conducted stress-testing on API ensuring container replication and efficient resource allocation.}
-esumeItem{Built a full-cycle pipeline for regular stress assessments, leveraging JMeter scripts and cloud execution through Blazemeter with Taurus.}
-esumeItem{Enhanced GitLab CI/CD workflows for smooth test execution, ensuring zero interference with AWS infrastructures or concurrent development tasks.}
-esumeItem{Earned accolades in two sprint reviews for setting benchmarks in extensive load testing.}
-esumeItem{Utilized Apache Beam for data processing tasks.}
-        \resumeItem{Constructed end-to-end pipeline for routine stress tests, utilizing JMeter for scripting and Blazemeter via Taurus for cloud execution.}
-        \resumeItem{Customized GitLab CI/CD pipeline to execute tests seamlessly, guaranteeing no disruption to AWS resources or other development work}      
-        \resumeItem{Received formal recognition in two sprint retrospectives for establishing the baseline for comprehensive load tests.}
-      \resumeItemListEnd
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
-
-    \resumeSubheading
       {Research Assistant - ML}{May 2022 -- August 2022}
       {Laboratory for Software Design}{Iowa, USA}
       \resumeItemListStart
-        \resumeItem{Contributed to the execution of 5 automated program repair tools for an empirical study on SLURM-based GPU clusters}
-        \resumeItem{Reduced execution time by 16x by enabling parallel execution of tools on 40 GPU clusters}
-        \resumeItem{Publication received a Distinguished Paper Award at the 38th IEEE/ACM International Conference on Automated Software Engineering}
+        \resumeItem{Employed Python and \textbf{TensorFlow} to execute 5 automated program repair tools, conducting ML research on SLURM-based GPU clusters.}
+        \resumeItem{Achieved a \textbf{16x reduction} in execution time by leveraging parallel execution on 40 GPU clusters, demonstrating proficiency in linear algebra and optimization techniques.}
+        \resumeItem{\textbf{Publication recognized with a Distinguished Paper Award} at the 38th IEEE/ACM International Conference, highlighting expertise in ML research and academic publishing.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Machine Learning Engineer}{May 2020 -- Dec 2021}
       {OpenUAE }{Sharjah, UAE}
       \resumeItemListStart
-        \resumeItem{Developed and optimized 12 ML models with 50 million records to predict monthly electricity use in Dubai, achieving 92.5\% accuracy.}
-        \resumeItem{Led a 6-person team in model analysis; achieved 10x faster training time using advanced algorithmic optimization techniques. [Paper]}
+        \resumeItem{Designed and optimized ML models using \textbf{PyTorch} and \textbf{Sklearn} on 50 million records, achieving \textbf{92.5\% accuracy} in predicting monthly electricity use in Dubai.}
+        \resumeItem{Led a 6-person collaborative team, achieving 10x faster training using algorithm optimization and advanced mathematical skills.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineering Intern}{05/2022 -- 08/2022}
+      {Kingland}{Iowa, USA}
+      \resumeItemListStart
+        \resumeItem{Deployed auto-scaling in AWS using \textbf{Python}, validated container duplication, and optimized resource usage to maintain user privacy and system efficiency.}
+        \resumeItem{Developed an end-to-end pipeline for routine stress tests, harnessing JMeter and Blazemeter, ensuring seamless user experiences.}
+        \resumeItem{Tailored GitLab CI/CD pipeline for seamless test execution, guaranteeing minimal disruption to resources.}
+        \resumeItem{Received formal recognition for establishing comprehensive load test baselines, reflecting commitment to innovation and excellence.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd

@@ -77,6 +77,11 @@
   }
 }
 
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    \centering{#1 \vspace{-2pt}}
+  }
+}
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -151,28 +156,30 @@
       {Software Engineering Intern}{05/2022 -- 08/2022}
       {Kingland}{Iowa, USA}
       \resumeItemListStart
-        \resumeItem{Deployed auto-scaling in AWS Fargate with object-oriented programming optimizing resource usage.}
-        \resumeItem{Built end-to-end ML testing pipeline using JMeter and Blazemeter integrated with cloud execution.}
-        \resumeItem{Optimized GitLab CI/CD for seamless ML tests, ensuring stability of AWS resources.}
-        \resumeItem{Recognized for pioneering comprehensive ML load tests in agile sprints.}
+        \resumeItem{Deployed auto-scaling in AWS Fargate; stress-tested API to validate container duplication and optimized resource usage.}
+        \resumeItem{Constructed end-to-end pipeline for routine stress tests, utilizing JMeter for scripting and Blazemeter via Taurus for cloud execution.}
+        \resumeItem{Customized GitLab CI/CD pipeline to execute tests seamlessly, guaranteeing no disruption to AWS resources or other development work}      
+        \resumeItem{Received formal recognition in two sprint retrospectives for establishing the baseline for comprehensive load tests.}
       \resumeItemListEnd
+
 
     \resumeSubheading
       {Research Assistant - ML}{May 2022 -- August 2022}
       {Laboratory for Software Design}{Iowa, USA}
       \resumeItemListStart
-        \resumeItem{Executed automated machine learning repair tools on SLURM-based GPU clusters.}
-        \resumeItem{Enhanced parallel processing, achieving 16x faster execution on 40 GPU clusters.}
-        \resumeItem{Publication awarded at IEEE/ACM Conference on Automated Software Engineering.}
+        \resumeItem{Contributed to the execution of 5 automated program repair tools for an empirical study on SLURM-based GPU clusters}
+        \resumeItem{Reduced execution time by 16x by enabling parallel execution of tools on 40 GPU clusters}
+        \resumeItem{Publication received a Distinguished Paper Award at the 38th IEEE/ACM International Conference on Automated Software Engineering}
       \resumeItemListEnd
 
     \resumeSubheading
       {Machine Learning Engineer}{May 2020 -- Dec 2021}
-      {OpenUAE}{Sharjah, UAE}
+      {OpenUAE }{Sharjah, UAE}
       \resumeItemListStart
-        \resumeItem{Engineered ML models using TensorFlow, predicting Dubai's monthly electricity with 92.5\% accuracy.}
-        \resumeItem{Led ML model optimization; achieved 10x faster training using advanced algorithms. [Paper]}
+        \resumeItem{Developed and optimized 12 ML models with 50 million records to predict monthly electricity use in Dubai, achieving 92.5\% accuracy.}
+        \resumeItem{Led a 6-person team in model analysis; achieved 10x faster training time using advanced algorithmic optimization techniques. [Paper]}
       \resumeItemListEnd
+
   \resumeSubHeadingListEnd
 
 

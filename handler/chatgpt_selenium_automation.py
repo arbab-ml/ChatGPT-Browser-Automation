@@ -92,6 +92,17 @@ class ChatGPTAutomation:
         input_box.submit()
         time.sleep(20)
 
+    def wait_for_manual_check(self):
+        print("You need to manually complete the log-in or the human verification if required.")
+
+        while True:
+            user_input = input("When done, simply press enter: ").lower()
+
+            if user_input == "":
+                print("Continuing...")
+                break
+            else:
+                print("Invalid input. Please press enter to continue.")
 
 
     def return_chatgpt_conversation(self):
