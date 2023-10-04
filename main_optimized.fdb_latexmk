@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1696314213 "/Users/muhammadarbabarshad/ChatGPT-Browser-Automation/main_optimized.tex" "main_optimized.pdf" "main_optimized" 1696314213 0
-  "/Users/muhammadarbabarshad/ChatGPT-Browser-Automation/main_optimized.tex" 1696314212 8756 0403707f3d4accc3c1074eb140423129 ""
+["pdflatex"] 1696315080 "/Users/muhammadarbabarshad/ChatGPT-Browser-Automation/main_optimized.tex" "main_optimized.pdf" "main_optimized" 1696315080 0
+  "/Users/muhammadarbabarshad/ChatGPT-Browser-Automation/main_optimized.tex" 1696315079 8496 261b903580cdffc956dd20a163050166 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -87,9 +87,9 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1683240638 4643545 53f31c3af0ba3b947cdc80fb4da1ecab ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1683240729 7886893 4ca5d91f033644614606b723eb1ba662 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "main_optimized.aux" 1696314213 1065 756d84d9150b02d5f08aee1660983b1c "pdflatex"
-  "main_optimized.out" 1696314213 390 8178769a591dae54593be5dc5893bd68 "pdflatex"
-  "main_optimized.tex" 1696314212 8756 0403707f3d4accc3c1074eb140423129 ""
+  "main_optimized.aux" 1696315080 1065 756d84d9150b02d5f08aee1660983b1c "pdflatex"
+  "main_optimized.out" 1696315080 390 8178769a591dae54593be5dc5893bd68 "pdflatex"
+  "main_optimized.tex" 1696315079 8496 261b903580cdffc956dd20a163050166 ""
   (generated)
   "main_optimized.aux"
   "main_optimized.log"

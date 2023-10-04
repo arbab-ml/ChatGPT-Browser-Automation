@@ -26,11 +26,12 @@ class ChatGPTAutomation:
         self.chrome_path = chrome_path
         self.chrome_driver_path = chrome_driver_path
 
-        url = r"https://chat.openai.com"
+        url = r"https://chat.openai.com/?model=gpt-4"
         free_port = self.find_available_port()
         print("the found free port is", free_port)
         self.launch_chrome_with_remote_debugging(free_port, url)
-        self.wait_for_human_verification()
+        time.sleep(2)
+        # self.wait_for_human_verification()
         self.driver = self.setup_webdriver(free_port)
 
 
@@ -70,7 +71,10 @@ class ChatGPTAutomation:
 
         # Using the new way of specifying executable_path
         service = Service(executable_path=self.chrome_driver_path)
+        chrome_options.add_argument("--headless")  # Run Chrome in headless mode
         driver = webdriver.Chrome(service=service, options=chrome_options)
+        
+
         return driver
 
 

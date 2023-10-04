@@ -17,12 +17,18 @@ chatgpt = ChatGPTAutomation(chrome_path, chrome_driver_path)
 # Read the job description from a file
 with open("job-description.txt", "r") as file:
     job_description = file.read()
+# Read the instructions from a file
+with open("instructions.txt", "r") as file:
+    instructions = file.read()
 
 # Extract the experience section
 experience_section, original_tex_content = extract_experience_section("main.tex")
 
 # Construct the prompt to send to ChatGPT
-prompt = f"Requirement: Please provide the optimized LaTeX code without additional comments or explanations\nJob Description: {job_description}\n\n{experience_section}\n\nPrompt: Optimize the resume bullet points to match the job description using ATS-friendly keywords, without altering job roles, achievements, or adding unmentioned skills; maintain length and provide output in the same raw format. Please provide the optimized LaTeX code without additional comments or explanations"
+prompt = f"The purpose of this prompt is to get a customized resume (only experience section) updated for each job description.\n \
+                                    Job Description:\n{job_description}\n  \
+                                    Current resume (in latex):\n{experience_section} \n\
+                                    Instructions: \n{instructions}"
 
 # Send the prompt to ChatGPT
 chatgpt.send_prompt_to_chatgpt(prompt)
