@@ -30,7 +30,7 @@ class ChatGPTAutomation:
         free_port = self.find_available_port()
         print("the found free port is", free_port)
         self.launch_chrome_with_remote_debugging(free_port, url)
-        time.sleep(2)
+        time.sleep(5)
         # self.wait_for_human_verification()
         self.driver = self.setup_webdriver(free_port)
 

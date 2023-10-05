@@ -99,6 +99,10 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\mylink}[2]{%
+    \textcolor{blue}{\underline{\href{#1}{#2}}}%
+}
+
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
@@ -108,6 +112,9 @@
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\def \OpenUAEURL{https://www.sciencedirect.com/science/article/abs/pii/S1474034622001653}
+\def \ISUdesign{https://conf.researchr.org/details/ase-2023/ase-2023-papers/105/Mutation-based-Fault-Localization-of-Deep-Neural-Networks}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -154,7 +161,7 @@
         \resumeItem{Deployed auto-scaling in AWS Fargate; stress-tested API to validate container duplication and optimized resource usage.}
         \resumeItem{Constructed end-to-end pipeline for routine stress tests, utilizing JMeter for scripting and Blazemeter via Taurus for cloud execution.}
         \resumeItem{Customized GitLab CI/CD pipeline to execute tests seamlessly, guaranteeing no disruption to AWS resources or other development work}      
-        \resumeItem{Received formal recognition in two sprint retrospectives for establishing the baseline for comprehensive load tests.}
+        \resumeItem{Received formal \underline{\emph{recognition in two sprint retrospectives}} for establishing the baseline for comprehensive load tests.}
       \resumeItemListEnd
 
 
@@ -164,15 +171,17 @@
       \resumeItemListStart
         \resumeItem{Contributed to the execution of 5 automated program repair tools for an empirical study on SLURM-based GPU clusters}
         \resumeItem{Reduced execution time by 16x by enabling parallel execution of tools on 40 GPU clusters}
-        \resumeItem{Publication received a Distinguished Paper Award at the 38th IEEE/ACM International Conference on Automated Software Engineering}
-      \resumeItemListEnd
+        \resumeItem{Publication received a \underline{\emph{Distinguished Paper Award}} at the 38th IEEE/ACM International Conference on Automated Software Engineering~(\mylink{\ISUdesign}{URL}).}
+
+        \resumeItemListEnd
 
     \resumeSubheading
       {Machine Learning Engineer}{May 2020 -- Dec 2021}
       {OpenUAE }{Sharjah, UAE}
       \resumeItemListStart
         \resumeItem{Developed and optimized 12 ML models with 50 million records to predict monthly electricity use in Dubai, achieving 92.5\% accuracy.}
-        \resumeItem{Led a 6-person team in model analysis; achieved 10x faster training time using advanced algorithmic optimization techniques. [Paper]}
+        \resumeItem{Led a 6-person team in model analysis; achieved 10x faster training time using advanced algorithmic optimization techniques~(\mylink{\OpenUAEURL}{URL}).}
+
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd

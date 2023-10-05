@@ -1,4 +1,6 @@
 import re
+import os
+import datetime
 from handler.chatgpt_selenium_automation import ChatGPTAutomation
 
 def extract_section(file_content, section_name, pattern):
@@ -13,7 +15,6 @@ def write_file(file_path, content):
     with open(file_path, "w") as file:
         file.write(content)
 
-
 chrome_driver_path = "//Users/muhammadarbabarshad/ChatGPT-Browser-Automation/chromedriver-mac-arm64/chromedriver"
 chrome_path = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
@@ -23,9 +24,22 @@ job_description = read_file("job-description.txt")
 instructions = read_file("instructions.txt")
 original_tex_content = read_file("resume-files/main.tex")
 
+# Extract the company name from the job description
+company_name = job_description.split("\n")[0]
+
+# Generate a timestamp
+timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+
+# Create a directory name using timestamp and company name
+output_dir = f"{timestamp}-{company_name}"
+
+# Ensure the directory exists
+if not os.path.exists(output_dir):
+    os.makedirs(output_dir)
+
 section_patterns = {
-    # "Experience": r'\\section{Experience}.*?\\resumeSubHeadingListEnd',
-    # "Projects": r'\\section{Projects}.*?\\resumeSubHeadingListEnd',
+    "Experience": r'\\section{Experience}.*?\\resumeSubHeadingListEnd',
+    "Projects": r'\\section{Projects}.*?\\resumeSubHeadingListEnd',
     "Technical Skills": r'\\section{Technical Skills}.*?\\end\{itemize\}'
 }
 
@@ -46,5 +60,8 @@ for section_name, pattern in section_patterns.items():
     
     updated_tex_content = updated_tex_content.replace(extracted_section, optimized_resume_section)
 
-write_file("resume-files/main_optimized.tex", updated_tex_content)
+# Save the updated .tex content into the new directory
+write_file(os.path.join(output_dir, "main_optimized.tex"), updated_tex_content)
+# just take input before exiting
+input("Press enter to exit")
 chatgpt.quit()
