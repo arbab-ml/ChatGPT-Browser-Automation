@@ -53,7 +53,8 @@ for section_name, pattern in section_patterns.items():
               f"Current resume section (in latex):\n{extracted_section}\nInstructions: \n{instructions}")
     
     chatgpt.send_prompt_to_chatgpt(prompt)
-    chatgpt.wait_for_manual_check()
+    # chatgpt.wait_for_manual_check ()
+    chatgpt.wait_for_time_check()
     
     full_response = chatgpt.return_last_response()
     optimized_resume_section = extract_section(full_response, section_name, pattern)

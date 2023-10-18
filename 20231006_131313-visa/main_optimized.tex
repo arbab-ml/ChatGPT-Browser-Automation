@@ -1,0 +1,241 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+% \usepackage[margin=0.7in]{geometry}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.72in}
+\addtolength{\evensidemargin}{-0.72in}
+\addtolength{\textwidth}{1.44in}
+\addtolength{\topmargin}{-0.72in}
+\addtolength{\textheight}{1.44in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\mylink}[2]{%
+    \textcolor{blue}{\underline{\href{#1}{#2}}}%
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, label={}]}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\def \OpenUAEURL{https://www.sciencedirect.com/science/article/abs/pii/S1474034622001653}
+\def \ISUdesign{https://conf.researchr.org/details/ase-2023/ase-2023-papers/105/Mutation-based-Fault-Localization-of-Deep-Neural-Networks}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Muhammad Arbab Arshad} \\ \vspace{1pt}
+    \small 848-313-9857 $|$ \href{mailto:arbab@iastate.edu}{\underline{arbab@iastate.edu}} $|$ 
+    \href{https://www.linkedin.com/in/arbab-arshad/ }{\underline{linkedin.com/in/arbab-arshad}} $|$
+    \href{https://arbab-ml.github.io/}{\underline{arbab-ml.github.io}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Iowa State University}{Iowa, USA}
+      {Ph.D. (Computer Science)}{Jan. 2022 -- Dec 2025}
+    \resumeSubheading
+      {American University of Sharjah}{Sharjah, UAE}
+      {M.S (Computer Engineering)}{Aug. 2019 -- Aug 2021}
+    \resumeSubheading
+      {Lahore University of Management Sciences}{Lahore, PK}
+      {B.S (Computer Science)}{Aug. 2015 -- May 2019}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+vbnet
+Copy code
+\resumeSubheading
+  {Research Assistant - Machine Learning}{May 2022 -- August 2022}
+  {Laboratory for Software Design}{Iowa, USA}
+  \resumeItemListStart
+    \resumeItem{Designed and executed \underline{\emph{Machine Learning algorithms}} as part of an empirical study on SLURM-based GPU clusters, using tools like Python and Java.}
+    \resumeItem{Innovatively reduced execution time by 16x by enabling parallel tool processing on 40 GPU clusters, showcasing a strong ability to think outside the box.}
+    \resumeItem{Collaborated with a diverse team and contributed to the publication that received a \underline{\emph{Distinguished Paper Award}} at the 38th IEEE/ACM International Conference on Automated Software Engineering~(\mylink{\ISUdesign}{URL}), illustrating profound research experience in Machine Learning.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Machine Learning Engineer}{May 2020 -- Dec 2021}
+  {OpenUAE }{Sharjah, UAE}
+  \resumeItemListStart
+    \resumeItem{Skillfully developed and optimized 12 ML models using Python, handling 50 million records to predict monthly electricity use, and achieved a remarkable 92.5\% accuracy.}
+    \resumeItem{Demonstrated leadership skills by heading a 6-person team in model analysis and employed advanced algorithmic optimization techniques to achieve 10x faster training time~(\mylink{\OpenUAEURL}{URL}).}
+    \resumeItem{Regularly collaborated with interdisciplinary teams, showcasing excellent interpersonal skills and a drive to produce outstanding results.}
+  \resumeItemListEnd
+  
+\resumeSubheading
+  {Software Engineering Intern}{05/2022 -- 08/2022}
+  {Kingland}{Iowa, USA}
+  \resumeItemListStart
+    \resumeItem{Executed auto-scaling in AWS Fargate using Java, stress-tested API to validate container duplication, and ensured optimal resource usage.}
+    \resumeItem{Constructed a comprehensive pipeline for routine stress tests using JMeter and Blazemeter via Taurus, emphasizing proficiency in large scale data processing.}
+    \resumeItem{Customized GitLab CI/CD pipeline ensuring seamless test executions with no disruptions, demonstrating keen analytical and problem-solving skills.}
+    \resumeItem{Achieved formal \underline{\emph{recognition in two sprint retrospectives}} for setting the standard for comprehensive load tests and consistently showcasing a results-driven approach.}
+  \resumeItemListEnd
+  
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+vbnet
+Copy code
+  \resumeProjectHeading
+      {\textbf{Adapting Image Clustering for Audio Analysis of Bat Behaviors - Masters Thesis} $|$ \emph{Python, TensorFlow, Keras, PyTorch}}{}
+      \resumeItemListStart
+        \resumeItem{Pioneered the adaptation of unsupervised ML image clustering algorithms for audio data analysis using tools like Python and TensorFlow.}
+        \resumeItem{Implemented cutting-edge algorithms such as IMSAT, IIC, SCAN, JULE, and DeepCluster, demonstrating proficiency in deep learning and achieving an accuracy of 88.28\% in classifying bats.}
+      \resumeItemListEnd
+
+  \resumeProjectHeading
+      {\textbf{Amazon Elastic Inference for Intrusion Detection} $|$ \emph{Java, AWS EC2, Keras}}{}
+      \resumeItemListStart
+        \resumeItem{Developed a novel approach using Amazon Elastic Inference (EI) for remote detection of SSH and FTP brute-force attacks, demonstrating hands-on experience with large scale data processing.}
+        \resumeItem{Achieved an impressive F1 score of 99\% and enhanced inference speed by 8x with the model on EI compared to local methods, highlighting analytical and problem-solving abilities.}
+      \resumeItemListEnd
+  
+  \resumeProjectHeading
+      {\textbf{Utilizing GANs for Emotional Melody Generation} $|$ \emph{Python, Keras}}{}
+      \resumeItemListStart
+        \resumeItem{Innovatively developed a poetry-to-melody generation system using Generative Adversarial Networks (GANs), showcasing expertise in AI and Deep Learning.}
+        \resumeItem{Generated melodies that bore a 68\% perceived similarity to authentic melodies, emphasizing my ability to think outside the box.}
+      \resumeItemListEnd
+
+  \resumeProjectHeading
+      {\textbf{MeditateGPT} $|$ \emph{MERN Stack, GPT-3 API, Amazon Polly, AWS S3}}{}
+      \resumeItemListStart
+        \resumeItem{Engineered MeditateGPT, a unique application for tailored guided meditations utilizing the GPT-3 API, underlining a drive for innovation in the field of AI.}
+        \resumeItem{Integrated SSML and Amazon Polly's TTS API for synthesis of authentic-sounding audio, reflecting strong collaborative and technical skills.}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\textbf{Languages}{: C++, Java, Python, R, MATLAB} \
+\textbf{Deep Learning}{: TensorFlow, PyTorch, Keras, CUDA, Scikit-learn, OpenCV, GPT-3 API, Unsupervised Techniques} \
+\textbf{Data Processing and Analytics}{: Hadoop, MapReduce, SQL} \
+\textbf{Amazon Web Services}{: EC2, Lambda, S3, VPC, ELB, IAM, KMS, Amazon Polly} \
+\textbf{General Tools}{: Git} \
+}}
+\end{itemize}
+
+%-------------------------------------------
+\end{document}

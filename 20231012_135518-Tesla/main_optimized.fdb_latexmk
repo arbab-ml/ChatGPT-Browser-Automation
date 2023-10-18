@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1697140662 "/Users/muhammadarbabarshad/ChatGPT-Browser-Automation/resume-files/main.tex" "main.pdf" "main" 1697140662 0
-  "/Users/muhammadarbabarshad/ChatGPT-Browser-Automation/resume-files/main.tex" 1697140661 9228 024b0386fb0121a7707ffdd78390267d ""
+["pdflatex"] 1697140736 "/Users/muhammadarbabarshad/ChatGPT-Browser-Automation/20231012_135518-Tesla/main_optimized.tex" "main_optimized.pdf" "main_optimized" 1697140736 0
+  "/Users/muhammadarbabarshad/ChatGPT-Browser-Automation/20231012_135518-Tesla/main_optimized.tex" 1697140661 9914 900ff3964e573c847d49ba71d10152ca ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -87,12 +87,12 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1683240638 4643545 53f31c3af0ba3b947cdc80fb4da1ecab ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1683240729 7886893 4ca5d91f033644614606b723eb1ba662 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "main.aux" 1697140662 1065 756d84d9150b02d5f08aee1660983b1c "pdflatex"
-  "main.out" 1697140662 390 8178769a591dae54593be5dc5893bd68 "pdflatex"
-  "main.tex" 1697140661 9228 024b0386fb0121a7707ffdd78390267d ""
+  "main_optimized.aux" 1697140736 1065 756d84d9150b02d5f08aee1660983b1c "pdflatex"
+  "main_optimized.out" 1697140736 390 8178769a591dae54593be5dc5893bd68 "pdflatex"
+  "main_optimized.tex" 1697140661 9914 900ff3964e573c847d49ba71d10152ca ""
   (generated)
-  "main.aux"
-  "main.log"
-  "main.out"
-  "main.pdf"
+  "main_optimized.aux"
+  "main_optimized.log"
+  "main_optimized.out"
+  "main_optimized.pdf"
   (rewritten before read)

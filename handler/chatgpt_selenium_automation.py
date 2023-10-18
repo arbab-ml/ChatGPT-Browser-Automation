@@ -93,7 +93,7 @@ class ChatGPTAutomation:
         time.sleep(20)
 
     def wait_for_manual_check(self):
-        print("You need to manually complete the log-in or the human verification if required.")
+        print("Manual wait step")
 
         while True:
             user_input = input("When done, simply press enter: ").lower()
@@ -104,6 +104,10 @@ class ChatGPTAutomation:
             else:
                 print("Invalid input. Please press enter to continue.")
 
+    def wait_for_time_check(self):
+        print("Autowait Step.")
+        time.sleep(20)
+        return
 
     def return_chatgpt_conversation(self):
         """
