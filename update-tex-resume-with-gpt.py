@@ -31,7 +31,7 @@ company_name = job_description.split("\n")[0]
 timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
 
 # Create a directory name using timestamp and company name
-output_dir = f"{timestamp}-{company_name}"
+output_dir = f"output-resumes/{timestamp}-{company_name}"
 
 # Ensure the directory exists
 if not os.path.exists(output_dir):
